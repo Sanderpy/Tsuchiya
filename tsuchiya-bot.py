@@ -144,12 +144,14 @@ async def ball (ctx):
     b = random.choice(a)
     await ctx.send(f'{b}')
 
-
-client.run(token)
-
 @client.command()
 async def rate (ctx):
     min = 1
     max = 10
     result = random.randint(min, max)
     await ctx.send(f'I rate that a: {result}')
+    
+
+client.run(token)
+
+
